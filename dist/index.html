@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>3volution</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    p {
+      margin: 0;
+    }
+
+    .dead {
+      color: #aaa
+    }
+
+    #canvas {
+      border: 1px solid lightgrey;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <h1>3volution</h1>
+        <canvas id="canvas" width="1024" height="800"></canvas>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <button type="button" id="runBtn" class="btn btn-primary">Run</button>
+        <button type="button" id="pauseBtn" class="btn btn-primary" disabled>Pause</button>
+        <button type="button" id="forwardBtn" class="btn btn-primary">Forward</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <div class="input-group mt-3">
+          <input id="yearsToRunInput" type="number" min="0" class="form-control" placeholder="Years to run">
+          <input id="foodInput" type="number" min="0" class="form-control" placeholder="Food">
+          <input id="creaturesInput" type="number" min="0" class="form-control" placeholder="Creatures">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div style="height: 300px">
+          <canvas id="myChart" width="400" height="400"></canvas>
+        </div>
+        <div id="stats">Stats</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

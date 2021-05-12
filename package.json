@@ -15,7 +15,7 @@
     "webpack-cli": "^3.3.9"
   },
   "dependencies": {
-    "chart.js": "^2.8.0",
+    "chart.js": "^2.9.4",
     "genetic-js": "^0.1.14"
   }
 }
